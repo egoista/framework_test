@@ -1,0 +1,15 @@
+{
+    "env": {
+        "node": true,
+        "commonjs": true,
+        "es2021": true,
+        "es2022": true,
+        "es2023": true
+    },
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+    }
+}
