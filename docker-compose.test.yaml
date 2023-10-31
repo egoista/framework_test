@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/home/node/app
+    environment:
+      NODE_ENV: test
+    command: npm test
