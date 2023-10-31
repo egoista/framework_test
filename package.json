@@ -5,11 +5,17 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test node --test"
+  },
+  "engines": {
+    "node": ">=21.0.0"
   },
   "author": "CIAL Dun & Bradstreet",
   "license": "UNLICENSED",
   "private": true,
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "node-mocks-http": "^1.13.0",
+    "supertest": "^6.3.3"
+  }
 }
