@@ -117,4 +117,33 @@ Good luck! :rocket:
 
 # Technical assignment - documentation
 
-TODO: add any general/docker documentation here
+## Running the application
+
+The application is built with Node.js and already has all environment configured with docker. To start the application you will need `docker` and `docker compose` installed on the machine. Having that you may run:
+
+```shell
+docker compose up
+```
+
+And then the application be started:
+
+```shell
+Starting nodedocker_app_1 ...
+Starting nodedocker_app_1 ... done
+```
+
+The application will be avaible on *PORT 3000*
+
+### Using postman to use the API
+
+import the `Documents.postman_collection.json` into postman and have access to the 5 routes available in the api
+
+## Running the tests
+
+To run the tests using docker you just have to run the following command:
+
+```shell
+docker-compose -f docker-compose.test.yml up
+```
+
+And then all tests will be ran and the status exit code will be 0 or 1 that means true or false.
